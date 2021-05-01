@@ -17,4 +17,7 @@ neighbor analysis to improve the vehicle counting
 performance.
 
 ## Setup
-### 
+### For setup clone the repository and install the conda environment:
+'
+conda env create -f conda-gpu.yml
+'
