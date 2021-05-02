@@ -38,7 +38,6 @@ pip install -r requirements.txt`
 ### Trainning
 #### Go to 'ScaledYOLOv4-yolov4-large'
 ` python train.py --device 0 --batch-size 8 --data ./data/data.yaml --cfg yolov4-csp.yaml --name yolov4_csp_512_sync --hyp ./data/hyp.finetune.yaml --img-size 512 512 --weight yolov4-csp.weights --epoch 300 --sync-bn
-
 `
 ## Counting Tracking and Creating submission csv file
 ### Structure
