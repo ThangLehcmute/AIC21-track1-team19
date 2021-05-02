@@ -50,8 +50,13 @@ pip install -r requirements.txt`
 Directory structure:
 
 * Dataset_A ([link](https://drive.google.com/drive/folders/1Q6s3YL0KQ2nnFM1Es8RvEAQcdfYEs_zf?usp=sharing))
+* ScaledYOLOv4-yolov4-large
+* mish-cuda-master
+* source_code
+* weights
 
 1. Go to 'AIC21-track1-team19/weigths'
 2. Download weights: [link](https://drive.google.com/file/d/15Z-ZC101rXjL1TymFk8s4bPx2c28GXGx/view?usp=sharing)
-3. Run code
+3. Go to 'AIC21-track1-team19/source_code/'
+4. Run code
 ` python run_0304.py `
