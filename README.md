@@ -56,7 +56,7 @@ Directory structure:
 * weights
 
 1. Go to 'AIC21-track1-team19/weigths'
-2. Download weights: [link](https://drive.google.com/file/d/15Z-ZC101rXjL1TymFk8s4bPx2c28GXGx/view?usp=sharing)
+2. Download weights: [link](https://drive.google.com/file/d/18ZbLNb1DfjJ42WGwQGMwRAfAJgOqqKm4/view?usp=sharing)
 3. Go to 'AIC21-track1-team19/source_code/'
 4. Run code
 ` python run_0304.py `
