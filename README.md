@@ -17,15 +17,10 @@ neighbor analysis to improve the vehicle counting
 performance.
 ## Detector
 ### Download Dataset
-1. Download images-set and lables : [link](https://drive.google.com/drive/folders/1x1bOvHdKnekuH2_-WPkXwaefIAbZFs6y?usp=sharing)
+1. Download images-set and lables : [link](https://drive.google.com/file/d/1wJSEGW2aamyeXmqSJuWgr2FyKScuuwL-/view?usp=sharing)
 
-2. Go to 'ScaledYOLOv4-yolov4-large/data'
+2. Unzip data, then move all to 'AIC21-track1-team19/ScaledYOLOv4-yolov4-csp/data/'.
 
-3. Create folders: 'train', 'train/images' and 'train/labels' into 'data' folder.
-
-4. Unzip images-set, then move all images from images-set folder to 'ScaledYOLOv4-yolov4-large/data/train/images'.
-
-5. Unzip labels, then move all json files to 'ScaledYOLOv4-yolov4-large/data/train/labels'.
 ### install mish-cuda
 `
 cd mish-cuda-master
@@ -34,23 +29,23 @@ python setup.py build install
 ### For install environment:
 `
 pip install -r requirements.txt`
-### Pretrained Model
-1. Download pretrained model : [link](https://drive.google.com/drive/folders/1FIIbxfv7gmS4bl33jlQiBOc8tC6LJBjM?usp=sharing)
+### weights
+1. Download weights : [link](https://drive.google.com/file/d/1jnHIWJ4Tk5xgURib_J_uSW_a9ZqErVzd/view?usp=sharing)
 
-2. Go to 'ScaledYOLOv4-yolov4-large/weights'
+2. Unzip weights, then move all to 'AIC21-track1-team19/ScaledYOLOv4-yolov4-csp/'.
 
-3. Put pretrained model in it
 
 ### Trainning
 #### Go to 'ScaledYOLOv4-yolov4-large'
-` python train.py --device 0 --batch-size 8 --data ./data/data.yaml --cfg ./models/yolov4-csp.yaml --name yolov4_csp_lar_512_sync --hyp ./data/hyp.finetune.yaml --img-size 512 512 --weight ./weights/yolov4-csp.weights --epoch 300 --sync-bn
+` python train.py --device 0 --batch-size 8 --data ./data/data.yaml --cfg yolov4-csp.yaml --name yolov4_csp_512_sync --hyp ./data/hyp.finetune.yaml --img-size 512 512 --weight yolov4-csp.weights --epoch 300 --sync-bn
+
 `
 ## Counting Tracking and Creating submission csv file
 ### Structure
 Directory structure:
 
 * Dataset_A ([link](https://drive.google.com/drive/folders/1Q6s3YL0KQ2nnFM1Es8RvEAQcdfYEs_zf?usp=sharing))
-* ScaledYOLOv4-yolov4-large
+* ScaledYOLOv4-yolov4-csp
 * mish-cuda-master
 * source_code
 * weights
