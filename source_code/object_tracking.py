@@ -104,7 +104,7 @@ class OT(object):
                     print('bug predict direc')
                     direc_proposed = None
                     pass
-                #direc_proposed, index = predict_direction(self.ROI, [p0,p1,p2,p3], self.MOI, conf=2.2)
+                #direc_proposed, index = predict_direction(self.ROI, [p0,p1,p2,p3], self.MOI, conf=2.4)
 
                 if direc_proposed != None:
                     points = list(self.pts[track.track_id])
