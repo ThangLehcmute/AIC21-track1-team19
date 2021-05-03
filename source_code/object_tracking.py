@@ -99,7 +99,7 @@ class OT(object):
 
             if not track.out_roi and vel >= 10:
                 try:
-                    direc_proposed, index = predict_direction(self.ROI, [p0,p1,p2,p3], self.MOI, conf=2.2)
+                    direc_proposed, index = predict_direction(self.ROI, [p0,p1,p2,p3], self.MOI, conf=2.4)
                 except:
                     print('bug predict direc')
                     direc_proposed = None
