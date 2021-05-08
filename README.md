@@ -30,7 +30,7 @@ python setup.py build install
 `
 pip install -r requirements.txt`
 ### weights
-1. Download weights : [link](https://drive.google.com/file/d/1jnHIWJ4Tk5xgURib_J_uSW_a9ZqErVzd/view?usp=sharing)
+1. Download weights : [link](https://drive.google.com/file/d/1Xlyd82J5J5Ktn73tYfgArPBk95kgxYFh/view?usp=sharing)
 
 2. Unzip weights, then move all to 'AIC21-track1-team19/ScaledYOLOv4-yolov4-csp/'.
 
