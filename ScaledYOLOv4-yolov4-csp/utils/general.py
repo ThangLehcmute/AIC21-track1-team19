@@ -887,8 +887,8 @@ def fitness(x):
 
 def output_to_target(output, width, height):
     # Convert model output to target format [batch_id, class_id, x, y, w, h, conf]
-    if isinstance(output, torch.Tensor):
-        output = output.cpu().numpy()
+    if True in list(map(lambda x : isinstance(x, torch.Tensor), output)) :
+        output = list(map(lambda x : x.cpu().numpy() if isinstance(x, torch.Tensor) else x, output))
 
     targets = []
     for i, o in enumerate(output):
