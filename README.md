@@ -64,3 +64,4 @@ Directory structure:
 3. Go to 'AIC21-track1-team19/source_code/'
 4. Run code
 ` python run_0304.py `
+5. Output file is in ./submission_output/submission.txt
