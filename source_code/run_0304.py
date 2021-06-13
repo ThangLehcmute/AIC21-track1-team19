@@ -333,7 +333,7 @@ if __name__ == '__main__':
         path = os.path.join(video_path, info[1])
         ROI, ROI_ex, MOI, multi = load_roi_moi(zones_path, roex_path, mois_path, multi_path, info[1])
         setofpoint = convert_multiPoint(multi)
-        frame_delay = load_delay('../Dataset_A/time_delay.txt', info[1])
+        frame_delay = load_delay('./add/Dataset_A/time_delay.txt', info[1])
         name = info[1].split('.')[0]
         print("Processing video: ", info)
         skip = 1 if (int(info[0]) in [6, 8, 11, 14, 21, 28]) else 2
